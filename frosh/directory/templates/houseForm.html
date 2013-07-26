@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8" />
+        <title>edit</title>
+        
+        <LINK REL="StyleSheet" href="{{ STATIC_URL }}css/style.css" TYPE="text/css">
+            
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="/static/js/editor.js"></script>
+        <script src="//malsup.github.io/min/jquery.form.min.js"></script>
+            
+    </head>
+    
+<body>
+
+{% if user.is_authenticated %}
+
+    <div class="loaded">
+    {% for house in houseList %}
+        
+    {% if house.user == user %}
+        <div class="title1">
+            {{ house.house_name|upper }} | Username: {{ house.user }}<br><br>
+        </div>
+        Members:<br><br>
+        
+        {% for member in vassalList %}
+        
+            {% if member.house == house %}
+        
+                &nbsp; {{ member.title }} {{ member.name }} | Steed: {{ member.horse_name }} | <a id="{{ member.id }}" href="#">EDIT</a><br><br>
+        
+                {% for photo in imageList %}
+        
+                    {% if photo.vassal == member %}
+        
+                    <img class="photo" src="{{ MEDIA_URL }}{{ photo.image }}" width="75" height="auto"/><br><br>
+        
+                    {% endif %}
+        
+                {% endfor %}
+        
+            {% endif %}
+        
+        {% endfor %}
+        
+        Please log out when finished<br><br>
+        <button type="submit" id="exit" href="{% url 'django.contrib.auth.views.logout' %}">LOG OUT</button>
+    {% endif %}
+    {% endfor %}
+    
+    
+    </div>
+    
+    <div class="vassal">
+    </div>
+    
+        
+</body>
+
+{% else %}
+    
+    <div class="container_content2" id="selector">
+        
+        <a id="loginClick" href="{% url 'django.contrib.auth.views.login' %}">Click here to access this page</a> <br><br>
+        <a id="loginClick" href="{% url 'directory.views.index' %}">Click here to return home</a>
+        
+    </div>
+    
+{% endif %}
+
+    
+    
+</html>

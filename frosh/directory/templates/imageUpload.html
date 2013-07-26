@@ -1,0 +1,23 @@
+<div class="vassal">
+
+<div class="column1">
+    <div class="headers">UPLOAD IMAGE</div>
+        <form method="POST" action="{% url 'directory.views.imageUpload' image.id %}" id="submit-photo" enctype="multipart/form-data">
+            {% csrf_token %}
+                <div class="imagename">
+                    {% for field in imageForm %}
+                        {{ field.label_tag }}<br>
+                        {{ field }}<br><br>
+                    {% endfor %}
+                </div>
+            <button type="submit" id="submit-photo">UPLOAD</button>
+        </form>
+    </div>
+</div>
+
+<div id="output1"></div>
+
+</div>
+
+
+            

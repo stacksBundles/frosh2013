@@ -1,0 +1,29 @@
+<div class="loaded">
+    {% for house in houseList %}
+    {% if house.user == user %}
+    <div class="title1">
+        {{ house.house_name|upper }} | Username: {{ house.user }}<br><br>
+    </div>
+    Members:<br><br>
+    
+    {% for member in vassalList %}
+    {% if member.house == house %}
+    
+    &nbsp; {{ member.title }} {{ member.name }} | Steed: {{ member.horse_name }} | <a id="{{ member.id }}" href="#">EDIT</a><br>
+    
+    {% for photo in imageList %}
+    {% if photo.vassal == member %}
+    <img class="photo" src="{{ STATIC_URL }}{{ photo }}" width="75" height="auto"/><br><br>
+    {% endif %}
+    {% endfor %}
+    
+    {% endif %}
+    {% endfor %}
+    
+    Please log out when finished<br><br>
+    <button type="submit" id="exit" href="{% url 'django.contrib.auth.views.logout' %}">LOG OUT</button>
+    {% endif %}
+    {% endfor %}
+    
+    
+</div>

@@ -1,0 +1,53 @@
+<div class="container_content_house" id="main">
+
+    <table id="coord">
+        <tr>
+            <td class="coord">Meet Your Frosh Coordinators, the Council of Twelve:</td>
+            <td class="coord"> And Say Hello on Twitter!</td>
+        </tr>
+    </table>
+    
+    <div class="fadein">
+        <img src="{{ STATIC_URL }}images/Coords/Alex.png" />
+        <img src="{{ STATIC_URL }}images/Coords/Alina.png" />
+        <img src="{{ STATIC_URL }}images/Coords/Beaver.png" />
+        <img src="{{ STATIC_URL }}images/Coords/Cat.png" />
+        <img src="{{ STATIC_URL }}images/Coords/Eric.png" />
+        <img src="{{ STATIC_URL }}images/Coords/James.png" />
+        <img src="{{ STATIC_URL }}images/Coords/Lucy.png" />
+        <img src="{{ STATIC_URL }}images/Coords/Osama.png" />
+        <img src="{{ STATIC_URL }}images/Coords/Paola.png" />
+    </div>
+    
+    <div id="twitter">
+        <a class="twitter-timeline" href="https://twitter.com/EngOWeek2013" data-widget-id="352865191345651713">Tweets by @EngOWeek2013</a>
+    </div>
+
+    <div class="clear"></div>
+
+</div>
+
+<div class="container_content_sponsor">
+
+    <span class="coord">And of course make sure to check out our awesome sponsors!</span><br><br>
+
+    {% for sponsor in sponsorList %}
+
+    <div class="title2">{{ sponsor.title|upper }}</div>
+
+    <div class="houseTables">
+        <table>
+            <tr>
+                <td id="cell"><a href="{{ sponsor.link }}"><img src="{{ STATIC_URL }}{{ sponsor.logo }}"></a></td>
+            </tr>
+        </table>
+        <br><br>
+    </div>
+
+    {% endfor %}
+    
+</div>
+
+<div class="footer">
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>

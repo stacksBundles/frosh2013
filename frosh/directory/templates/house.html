@@ -1,0 +1,31 @@
+<div class="container_content_house" id="main">
+    
+    {% for house in houseList %}
+    <div class="title2">{{ house.house_name|upper }} | {{ house.user }}</div>
+    <div class="houseTables">
+        <table>
+            <tr>
+                <td id="cell"> <img src="{{ house.house_crest }}"> </td>
+                {% for vassal in vassalList %}
+                {% if vassal.house == house %}
+                <td id="cell"> <div class="title3">{{ vassal.title }} {{ vassal.name }}</div><br><br>
+                    <div class="photo">
+                        {% for image in imageList %}
+                        {% if image.vassal == vassal %}
+                    <img src="{{ STATIC_URL }}{{ image }}" width="120" height="auto" id="photo"/></div><br><br>
+                    {% endif %}
+                    {% endfor %}
+                    <div class="title4">Horse's name:</div>
+                    {{ vassal.horse_name }}<br><br>
+                    <div class="title4">Favorite event:</div>
+                    {{ vassal.favorite_event }}<br><br>
+                </td>
+                {% endif %}
+                {% endfor %}
+            </tr>
+        </table>
+        <br><br>
+    </div>
+    {% endfor %}
+    
+</div>

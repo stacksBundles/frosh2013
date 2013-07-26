@@ -1,0 +1,529 @@
+/*-----------------
+ 
+ TAGS
+ 
+-------------------*/
+
+
+body {
+    background-color: rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    height: 1300px;
+    width: 1300px;
+    font-family: 'EB Garamond', serif;
+}
+
+table {
+    
+  /*  table-layout:fixed; */
+}
+
+td {
+    width: 140px;
+    height: 240px;
+    display: inline;
+    vertical-align: top;
+    padding-left: 0px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 30, 100);
+    padding: 3px 3px 3px 3px;
+}
+
+img {
+    vertical-align: top;
+    display: inline;
+    }
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 1300;
+    height: 0;
+    margin-top: 20px;
+    }
+
+td #register {
+    width: 162px;
+    padding-left: 0px;
+}
+
+
+/*-----------------
+ 
+ CLASSES: SIZING
+ 
+ -------------------*/
+
+.container_background {
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    background-image: url("/static/images/Backgroundimage.png"); background-repeat: no-repeat;
+    
+}
+
+.container_content {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    padding-top: 196px;
+    /* background-image: url("/static/images/Backgroundimage.png"); background-repeat: no-repeat;
+      */
+}
+
+.container_content2 {
+    margin-bottom: 40px;
+    margin-top: 0px;
+    width: 1270px;
+    margin-left: 100px;
+    margin-right: auto;
+}
+
+.container_content_legend {
+    margin-bottom: 40px;
+    margin-top: 0px;
+    width: 1130px;
+    margin-left: 80px;
+    margin-right: auto;
+}
+
+
+.container_content_house {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    width: 1200px;
+    margin-left: 100px;
+    margin-right: auto;
+}
+
+.container_content_sponsor {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    width: 1100px;
+    margin-left: 100px;
+    margin-right: auto;
+}
+
+.bigBox {
+    width: 900px;
+    display: inline;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.exit {
+    color: rgb(0, 0, 0);
+    height: auto;
+    float: left;
+}
+
+.twitterBox {
+    float: left;
+    width: 226px;
+    height: 382px;
+    background: rgb(0, 0, 0);
+    display: inline;
+    margin: 14px 0px 0px 20px;
+}
+
+.box1 {
+    float:left;
+    width: 226px;
+    height: 382px;
+    background: rgb(0, 0, 0);
+    display: inline;
+    margin: 14px 0px 0px 20px;
+    background-image: url('/static/images/day1.png');
+}
+
+.box2 {
+    float:left;
+    width: 226px;
+    height: 382px;
+    background: rgb(0, 0, 0);
+    display: inline;
+    margin: 14px 0px 0px 20px;
+    background-image: url('/static/images/day2.png');
+}
+
+.box3 {
+    float:left;
+    width: 226px;
+    height: 382px;
+    background: rgb(0, 0, 0);
+    display: inline;
+    margin: 14px 0px 0px 20px;
+    background-image: url('/static/images/day3.png');
+}
+
+.box4 {
+    float:left;
+    width: 226px;
+    height: 382px;
+    background: rgb(0, 0, 0);
+    display: inline;
+    margin: 14px 0px 0px 20px;
+    background-image: url('/static/images/day4.png');
+}
+
+.photo {
+    /*    border-width: 8px;
+          border-color: rgb(140, 60, 60); */
+    margin-left: 90px;
+}
+
+.sub_head {
+    font-size: 150%;
+    text-align: center;
+    padding-right: 30px;
+}
+
+.hiddenHouse {
+    background-image: url('/static/images/banner.png'); background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    margin: 0px 0px 0px 0px;
+    height: 0px;
+    width: 247px;
+    overflow: hidden;
+}
+
+.houseBox {
+    float:left;
+    width: 247px;
+    display: inline;
+    margin: 0px 0px 0px 0px;
+}
+
+.sidebar1 {
+    float: left;
+    display: inline;
+    width: 234px;
+}
+
+.sidebar2 {
+    margin-left: 8px;
+    float: left;
+    display: inline;
+    width: 457px;
+}
+
+.text {
+    float: left;
+    display: inline;
+    width: 427px;
+}
+
+/*-----------------
+ 
+ CLASSES: FORMATTING
+ 
+ -------------------*/
+
+
+
+.loaded {
+    background-color: rgb(40, 40, 40);
+    padding: 8px 8px 8px 8px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.vassal {
+    background-color: rgb(40, 40, 40);
+    padding: 12px 8px 8px 8px;
+    color: rgb(255, 255, 255);
+}
+
+.title1 {
+    font-weight: 600;
+    font-size: 120%;
+    
+}
+
+.subTitle1 {
+    font-weight: 600;
+    font-size: 120%;
+    
+    color: rgb(0, 0, 0);
+    margin-top: 3px;
+    width: 190px;
+    text-align: center;
+    margin-left: 25px;
+}
+
+.title2 {
+    font-weight: 600;
+    font-size: 140%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 49, 122);
+    padding: 8px 8px 8px 8px;
+    
+}
+
+.subTitle2 {
+    font-weight: 600;
+    font-size: 120%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 3px;
+}
+
+.coord {
+    font-weight: 400;
+    font-size: 120%;
+    color: rgb(255, 255, 255);
+    width: 500px;
+    height: 20px;
+    margin-top: 60px;
+}
+
+.title3 {
+    font-weight: 700;
+    font-size: 140%;
+}
+
+.subTitle3 {
+    font-weight: 300;
+    font-size: 120%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.title4 {
+    font-weight: 700;
+    font-size: 120%;
+}
+
+.houseTables {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    padding: 8px 8px 8px 8px;
+    
+}
+
+.scrollbar {
+    margin-top: 20px;
+    width: 974px;
+    height: 50px;
+    list-style-type:none;
+    white-space:nowrap;
+    overflow-x:auto;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 3px 3px 3px;
+    margin-left: 10px;
+    }
+
+.housetitle {
+    display: inline;
+    font-size: 120%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(80, 80, 200);
+    margin-left: 8px;
+    margin-top: 4px;
+    padding: 3px 3px 3px 3px;
+}
+
+.centerPiece {
+    /* background-image: url('/static/images/coming.png'); background-repeat: no-repeat; */
+}
+
+.fadein {
+    position: relative;
+    width: 300px;
+    height: 699px;
+    display: inline;
+    float: left;
+    margin-left: 120px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(10, 10, 10);
+    margin-bottom: 30px;
+
+}
+
+
+.fadein img {
+    position:absolute;
+    left:0; top:0;
+    display: none;
+}
+
+.fadein2 {
+    position:relative;
+    display: inline;
+    float: left;
+    width: 234px;
+    height: 697px;
+}
+
+
+.fadein2 img {
+    position:absolute;
+    left:0; top:0;
+    display: none;
+}
+
+.fadein3 {
+    position:relative;
+    display: inline;
+    float: left;
+    width:457px;
+    height: 697px;
+}
+
+
+.fadein3 img {
+    position:absolute;
+    left:0; top:0;
+    display: none;
+}
+
+.fb-like {
+    margin-left: 200px;
+    padding-top: 40px;
+}
+
+
+/*-----------------
+ 
+ IDs: FORMATTING
+ 
+ -------------------*/
+
+#coord {
+    margin-bottom: 20px;
+    margin-left: 110px;
+}
+
+#loadHouse {
+    width: 988px;
+    height: 378px;
+    margin-left: 10px;
+}
+
+#landing {
+    margin-left: 40px;
+}
+
+#cell {
+    width: 130px;
+    text-align: left;
+    padding: 8px 8px 8px 8px;
+}
+
+#cell a {
+    color: rgb(255,255,255);
+    background-color: rgb(255,255,255);
+}
+
+#cell img {
+    width: 800px;
+    height:auto;
+}
+
+#main {
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-left: 140px;
+}
+
+#twitter {
+    display: inline;
+    float: left;
+    width: 400px;
+    height: 500px;
+    margin-left: 120px;
+}
+
+#facebook {
+    padding-left: 30px;
+    display: inline;
+    float: left;
+    margin-top: 40px;
+}
+
+#social {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+
+#lookup-house {
+    color: rgb(255, 255, 255);
+    background-color: rgb(40, 40, 40);
+    padding: 8px 8px 8px 8px;
+}
+
+#vassal-edit {
+    color: rgb(255, 255, 255);
+    background-color: rgb(40, 40, 40);
+    padding: 8px 8px 8px 8px;
+}
+
+#exit {
+    color: rgb(255, 255, 255);
+    background-color: rgb(40, 40, 40);
+    padding: 8px 8px 8px 8px;
+}
+
+#table {
+    background-color: rgb(40, 40, 40);
+}
+
+#myTable {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    height: 30px;
+}
+
+#hidden1 {
+    float:left;
+    width: auto;
+    height: auto;
+    background: #ccc;
+}
+
+#hidden2 {
+    float:left;
+    width: auto;
+    height: auto;
+    background: #ccc;
+}
+
+#hidden3 {
+    float:left;
+    width: auto;
+    height: auto;
+    background: #ccc;
+}
+
+#hidden4 {
+    float:left;
+    width: auto;
+    height: auto;
+    background: #ccc;
+}
+
+#photo {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#reload {
+    margin-bottom: 0px;
+    background-image: url("/static/images/Backgroundimage.png"); background-repeat: no-repeat;
+}
+
+#faq {
+    margin-left: 135px;
+}

@@ -1,0 +1,23 @@
+<div class="vassal">
+    
+<div class="title1">
+    Edit member information for: {{ vassal.title}} {{ vassal.name }} <br><br>
+    <a class="change-photo" id="{{ vassal.id }}">CHANGE PHOTO</a>
+</div>
+    <br><br>
+
+<form method="POST" id="vassal-edit" action="{{ vassal.id }}" >
+    
+    {% csrf_token %}
+    {% for fields in forms %}
+        {{ fields.label_tag }}<br><br>
+        {{ fields }}<br><br>
+    {% endfor %}
+
+    <button type="submit" id="vassal-edit">UPDATE</button>
+    
+</form>
+
+
+
+</div>

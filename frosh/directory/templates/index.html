@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8" />
+        <title>frosh of thrones</title>
+        <LINK REL="StyleSheet" href="{{ STATIC_URL }}css/style.css" TYPE="text/css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="/static/js/effects.js"></script>
+        <link href="http://fonts.googleapis.com/css?family=EB+Garamond" rel='stylesheet' type='text/css'>
+    </head>
+
+{% if user.is_authenticated %}
+    <body>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+                 var js, fjs = d.getElementsByTagName(s)[0];
+                 if (d.getElementById(id)) return;
+                 js = d.createElement(s); js.id = id;
+                 js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                 fjs.parentNode.insertBefore(js, fjs);
+                 }(document, 'script', 'facebook-jssdk'));</script>
+    <div  id="reload">
+        
+            
+        <div class="container_content">
+            
+            <table id="myTable">
+                <tr>
+                    <td class="boxed" id="index"><img src="{{ STATIC_URL }}images/buttons/index.png" onmouseover="this.src='{{ STATIC_URL}}images/buttons/indexhover.png'"onmouseout="this.src='{{ STATIC_URL }}images/buttons/index.png'"/></td>
+                    <td class="boxed" id="propaganda"><img src="{{ STATIC_URL }}images/buttons/propaganda.png" onmouseover="this.src='{{ STATIC_URL}}images/buttons/propagandahover.png'"onmouseout="this.src='{{ STATIC_URL }}images/buttons/propaganda.png'"/></td>
+                    <td class="boxed" id="faq"><img src="{{ STATIC_URL }}images/buttons/faq.png" onmouseover="this.src='{{ STATIC_URL}}images/buttons/faqhover.png'"onmouseout="this.src='{{ STATIC_URL }}images/buttons/faq.png'"/></td>
+                    <td class="centerPiece">
+                        <br><br><br>
+                        <img src="{{ STATIC_URL }}images/coming.png" width="140">
+                        <br><br>
+                        <iframe src="http://free.timeanddate.com/countdown/i3ozcnz0/n165/cf11/cm0/cu4/ct1/cs0/ca0/co0/cr0/ss0/cacfff/cpc000/pct/tcfff/fs100/szw448/szh189/iso2013-08-29T17:00:00" frameborder="0" width="160" height="28"></iframe>
+
+                    </td>
+                    <td class="boxed" id="sponsors"><img src="{{ STATIC_URL }}images/buttons/sponsors.png" onmouseover="this.src='{{ STATIC_URL}}images/buttons/sponsorshover.png'"onmouseout="this.src='{{ STATIC_URL }}images/buttons/sponsors.png'"/></td>
+                    <td class="boxed" id="houses"><img src="{{ STATIC_URL }}images/buttons/houses.png" onmouseover="this.src='{{ STATIC_URL}}images/buttons/houseshover.png'"onmouseout="this.src='{{ STATIC_URL }}images/buttons/houses.png'"/></td>
+                    <td class="boxed" id="register"><img src="{{ STATIC_URL }}images/buttons/register.png" onmouseover="this.src='{{ STATIC_URL}}images/buttons/registerhover.png'"onmouseout="this.src='{{ STATIC_URL }}images/buttons/register.png'"/></td>
+                </tr>
+            </table>
+                        
+        </div>
+        <div class="container_content2" id="main">
+            
+                
+                <div class="box1">
+                    <div id="hidden1"><img src="{{ STATIC_URL }}images/mapDAY1flyout.png"/></div>
+                </div>
+                
+                <div class="box2">
+                    <div id="hidden2"><img src="{{ STATIC_URL }}images/mapDAY2flyout.png"/></div>
+                </div>
+                
+                <div class="box3">
+                    <div id="hidden3"><img src="{{ STATIC_URL }}images/mapDAY3flyout.png"/></div>
+                </div>
+                
+                <div class="box4">
+                    <div id="hidden4"><img src="{{ STATIC_URL }}images/mapDAY4flyout.png"/></div>
+                </div>
+                
+
+            <div class="exit">
+                <img src="{{ STATIC_URL }}images/scroll.png">
+            </div>
+  
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="fb-like" data-href="https://www.facebook.com/EngineeringOWeek2013" data-send="true" data-width="450" data-show-faces="true" data-colorscheme="dark"></div>
+    
+    </body>
+    {% endif %}
+
+    <!-- License:
+     All Python, HTML, CSS and Javascript code (hereafter referred to as "the Code") written by Iain J. Mingo (hereafter referred to as "the Author") is governed by the following terms:
+     
+        (1) The Author retains the right to reuse any portion of the Code in future projects.
+     
+        (2) The Author retains the right of ownership following publication.
+     
+        (3) The Code is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of mechantability,
+        fitness for a particular purpose and noninfringement. In no event shall the Author be liable for any claim, tort or otherwise, arising from, out of or in connection with the Code or the use or other dealings in the Code.
+     
+     The Engineering Undergraduate `Society of McGill University is furnished with the Code free of charge pursuant to the preceeding conditions.
+     -->
+    
+    
+</html>

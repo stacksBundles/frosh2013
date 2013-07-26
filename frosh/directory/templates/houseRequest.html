@@ -1,0 +1,26 @@
+<div id="loadHouse" style="background-image: url('{{ house.house_crest }}');">
+    {% for member in memberList %}
+    
+    <div class="houseBox">
+        <div class="hiddenHouse" style="height: 0px;">
+            <div class="subTitle1">{{ member.name }}</div><br>
+            {% for photo in imageList %}
+            {% if photo.vassal == member %}
+            <span class="photo">
+                <img src="{{ MEDIA_URL }}{{ photo.image }}" width="75" height="auto" />
+            </span>
+            {% endif %}
+            {% endfor %}
+            <br>
+            <div class="subTitle2">Horse's Name:</div>
+            
+            <div class="subTitle3">{{ member.horse_name }}</div>
+            
+            <div class="subTitle2">Favorite Event:</div>
+            
+            <div class="subTitle3">{{ member.favorite_event }}</div>
+        </div>
+    </div>
+    
+    {% endfor %}
+</div>

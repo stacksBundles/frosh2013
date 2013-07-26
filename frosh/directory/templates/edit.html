@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8" />
+        <title>edit</title>
+        
+        <LINK REL="StyleSheet" href="{{ STATIC_URL }}css/style.css" TYPE="text/css">
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+            <script src="/static/js/editor.js"></script>
+            <script src="/static/js/form.js"></script>
+            
+    </head>
+    
+    {% if user.is_authenticated %}
+
+<div class="container_content2" id="selector">
+    
+    <form method="POST" id="lookup-house" action="#">
+        {% csrf_token %}
+        Select your house:<br><br>
+        {% for field in houseForm %}
+                {{ field }}<br><br>
+        {% endfor %}
+        <button type="submit" id="lookup-house">SUBMIT</button>
+    </form>
+    
+    <div class="loaded">
+    </div>
+    
+    <div class="vassal">
+    </div>
+                
+                
+        
+    
+</div>
+    
+    {% else %}
+    <div class="container_content2" id="selector">
+    
+    <a id="loginClick" href="{% url 'django.contrib.auth.views.login' %}">Click here to access this page</a> <br><br>
+    <a id="loginClick" href="{% url 'directory.views.index' %}">Click here to return home</a>
+        
+    </div>
+    
+    {% endif %}
+
+<div class="footer">
+ 
+</div>

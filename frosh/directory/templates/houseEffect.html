@@ -1,0 +1,41 @@
+<div class="container_content2" id="main">
+    <div id="loadHouse" >
+    
+    <img id="landing" src="{{ STATIC_URL }}images/intro.png"/>
+    <div class="houseBox"  >
+        
+        <div class="hiddenHouse" style="display: none;">
+           <!-- <div class="subTitle1">{{ member.name }}</div><br>
+            {% for photo in imageList %}
+            {% if photo.vassal == member %}
+            <span class="photo">
+                <img src="{{ MEDIA_URL }}{{ photo.image }}" width="75" height="auto"/>
+            </span>
+            {% endif %}
+            {% endfor %}
+            <br>
+            <div class="subTitle2">Horse's Name</div>
+            <br>
+            <div class="subTitle3">{{ member.horse_name }}</div>
+            <br>
+            <div class="subTitle2">Favorite Event</div>
+            <br>
+            <div class="subTitle3">{{ member.favorite_event }}</div>  -->
+        </div>
+    </div>
+        
+    </div>
+    
+    
+        
+    
+    <div class="clear"></div>
+    
+    <div class="scrollbar">
+        {% for house in houseList %}
+        <span class="housetitle" id="{{ house.id }}">{{ house.house_name }}</span>
+        {% endfor %}
+    </div>
+    
+</div>
+

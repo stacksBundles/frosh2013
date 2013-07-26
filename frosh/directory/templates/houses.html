@@ -1,0 +1,19 @@
+<div class="container_content2" id="main">
+    
+    {% for house in houseList %}
+    
+    {{ house.tag }}<br>
+    
+        {% for entry in textList %}
+        
+            {% if entry.page == house %}
+            
+                <p>{{ entry.entry }}</p><br><br>
+            
+            {% endif %}
+    
+        {% endfor %}
+    
+    {% endfor %}
+    
+</div>
